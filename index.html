@@ -133,92 +133,17 @@
       footer.site-foot { padding: 24px 0 32px; line-height: 2; }
       footer.site-foot a { margin: 0 8px; }
     }
-
-    /* ============ 编辑器 ============ */
-    #edit-toggle {
-      position: fixed; right: 24px; bottom: 24px; z-index: 200;
-      background: var(--accent); color: #fff; border: none; border-radius: 999px;
-      padding: 13px 22px; font-size: 14px; font-weight: 600; cursor: pointer;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16); font-family: inherit;
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
-    #edit-toggle:hover { transform: translateY(-2px); background: #b85a0d; }
-
-    #editor {
-      position: fixed; top: 0; right: 0; bottom: 0; width: 430px; max-width: 100vw;
-      background: #fff; color: var(--ink); z-index: 210;
-      transform: translateX(100%); transition: transform 0.3s ease;
-      display: flex; flex-direction: column; border-left: 1px solid var(--rule);
-      box-shadow: -20px 0 60px rgba(0, 0, 0, 0.15);
-    }
-    #editor.open { transform: translateX(0); }
-    .editor-head { padding: 20px 24px; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-    .editor-head h3 { font-size: 18px; font-weight: 700; color: var(--ink); }
-    .editor-head p { font-size: 12px; color: var(--ink-mute); margin-top: 3px; }
-    .editor-close { background: transparent; border: 1px solid var(--rule); color: var(--ink-soft); width: 34px; height: 34px; border-radius: 6px; font-size: 15px; cursor: pointer; flex-shrink: 0; }
-    .editor-close:hover { color: var(--accent); border-color: var(--accent); }
-    .editor-body { flex: 1; overflow-y: auto; padding: 20px 24px 40px; }
-    .editor-group { margin-bottom: 26px; }
-    .editor-group > h4 { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); font-weight: 700; }
-    .editor-field { margin-bottom: 13px; }
-    .editor-field label { display: block; font-size: 13px; color: var(--ink-mute); margin-bottom: 5px; }
-    .editor-field input, .editor-field textarea {
-      width: 100%; background: var(--bg); color: var(--ink);
-      border: 1px solid var(--rule); border-radius: 5px; padding: 9px 12px;
-      font-family: inherit; font-size: 14px; outline: none; transition: border-color 0.15s;
-    }
-    .editor-field textarea { min-height: 70px; resize: vertical; line-height: 1.6; }
-    .editor-field input:focus, .editor-field textarea:focus { border-color: var(--accent); }
-    .editor-foot { padding: 14px 24px; border-top: 1px solid var(--rule); display: flex; gap: 10px; flex-wrap: wrap; background: var(--bg); }
-    .editor-foot button { flex: 1; min-width: 80px; padding: 11px; border-radius: 6px; border: none; cursor: pointer; font-size: 14px; font-weight: 600; font-family: inherit; }
-    .btn-save { background: var(--accent); color: #fff; }
-    .btn-save:hover { background: #b85a0d; }
-    .btn-export { background: var(--ink); color: #fff; }
-    .btn-export:hover { background: #000; }
-    .btn-reset { background: transparent; color: var(--ink-mute); border: 1px solid var(--rule) !important; }
-    .btn-reset:hover { color: var(--accent); border-color: var(--accent) !important; }
-
-    .avatar-uploader { display: flex; align-items: center; gap: 16px; }
-    .avatar-preview { width: 72px; height: 72px; border-radius: 50%; background: var(--bg-soft); border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; color: var(--ink-faint); font-size: 12px; }
-    .avatar-preview img { width: 100%; height: 100%; object-fit: cover; }
-    .avatar-actions { display: flex; flex-direction: column; gap: 8px; }
-    .avatar-actions button { background: var(--bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 14px; cursor: pointer; font-size: 13px; font-family: inherit; }
-    .avatar-actions button:hover { color: var(--accent); border-color: var(--accent); }
-    .avatar-actions button.danger:hover { border-color: #e33; color: #e33; }
-
-    #toast { position: fixed; left: 50%; bottom: 30px; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 11px 22px; border-radius: 999px; font-size: 13px; font-weight: 600; z-index: 300; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
-    #toast.show { opacity: 1; }
   </style>
 </head>
 <body>
 
   <div id="app"></div>
 
-  <button id="edit-toggle" aria-label="编辑网站文字">✎ 编辑</button>
-
-  <aside id="editor" aria-hidden="true">
-    <div class="editor-head">
-      <div>
-        <h3>编辑网站文字</h3>
-        <p>改完点「保存」，网页立即更新</p>
-      </div>
-      <button class="editor-close" id="editor-close" aria-label="关闭">✕</button>
-    </div>
-    <div class="editor-body" id="editor-body"></div>
-    <div class="editor-foot">
-      <button class="btn-save" id="btn-save">保存</button>
-      <button class="btn-export" id="btn-export">导出网页</button>
-      <button class="btn-reset" id="btn-reset">恢复默认</button>
-    </div>
-  </aside>
-
-  <div id="toast"></div>
-
   <script>
     // ============================================================
-    // 网站全部内容集中在这里，编辑器改动会写入这里
+    // 网站全部内容集中在这里，改这里即可更新
     // ============================================================
-    const DEFAULTS = /*__CONTENT_START__*/{
+    const CONTENT = {
       name: "小欧",
       tagline: "把想法变成产品",
       about: "AI 产品经理，探索 AI、理解用户，把想法变成产品。\n关注 AI 产品、Agent 与人机协作，偶尔写点思考。",
@@ -228,7 +153,7 @@
 
       stats: [
         { num: "3", title: "文章", sub: "AI 与产品思考 · 持续更新" },
-        { num: "6", title: "项目", sub: "Side Projects · 持续更新" },
+        { num: "11", title: "项目", sub: "Side Projects · 持续更新" },
         { num: "∞", title: "GitHub", sub: "xiaoou-waou" }
       ],
 
@@ -258,50 +183,27 @@
 
       projects: [
         { name: "xhs-sanhuamao-writer", desc: "小红书原创图文写作与生图提示词生成 Skill", href: "https://github.com/xiaoou-waou/xhs-sanhuamao-writer" },
-        { name: "zhaopianfengge-skill", desc: "AI 图片风格转换 Skill：将真实照片重组为艺术海报", href: "https://github.com/xiaoou-waou/zhaopianfengge-skill" },
+        { name: "zhaopianfengge-skill", desc: "AI 图片风格转换 Skill：把真实照片重组为艺术海报", href: "https://github.com/xiaoou-waou/zhaopianfengge-skill" },
+        { name: "xiaoou-cinematic-video-prompt", desc: "把完整脚本拆成电影化、逐场景的视频生成提示词", href: "https://github.com/xiaoou-waou/xiaoou-cinematic-video-prompt" },
         { name: "xiaoou-material-illustrator", desc: "AI 材质插画生成 Skill", href: "https://github.com/xiaoou-waou/xiaoou-material-illustrator" },
-        { name: "xiaoou-gzh-layout", desc: "公众号排版", href: "https://github.com/xiaoou-waou/xiaoou-gzh-layout" },
-        { name: "xiaoou-ai-article-writer", desc: "文章写作", href: "https://github.com/xiaoou-waou/xiaoou-ai-article-writer" },
+        { name: "xiaoou-gzh-layout", desc: "公众号排版 Skill：Markdown / Word / PDF 一键排版进公众号", href: "https://github.com/xiaoou-waou/xiaoou-gzh-layout" },
+        { name: "xiaoou-ai-article-writer", desc: "文章写作 Skill", href: "https://github.com/xiaoou-waou/xiaoou-ai-article-writer" },
+        { name: "agent-reach", desc: "给 AI Agent 一键装上互联网能力", href: "https://github.com/xiaoou-waou/agent-reach" },
+        { name: "image-recon", desc: "参考图逆向分析 Skill：场景拓扑、复刻优先级与构图拆解", href: "https://github.com/xiaoou-waou/image-recon" },
+        { name: "Snaploom", desc: "在 Mac 上捕捉、标注、录制、创作的桌面工具", href: "https://github.com/xiaoou-waou/Snaploom" },
+        { name: "ui-devtool", desc: "确定性 UI 设计质量检测器：专查 AI 生成页面的廉价信号", href: "https://github.com/xiaoou-waou/ui-devtool" },
         { name: "personal-homepage", desc: "这个网站本身，纯手工打造", href: "https://github.com/xiaoou-waou/personal-homepage" }
       ],
 
       links: [
         { text: "GitHub", href: "https://github.com/xiaoou-waou" },
-        { text: "人人都是产品经理", href: "https://www.woshipm.com/ai/6447314.html" }
+        { text: "人人都是产品经理", href: "https://www.woshipm.com/u/1685328" }
       ]
-    }/*__CONTENT_END__*/;
+    };
 
     // ============================================================
     // 工具函数
     // ============================================================
-    const STORAGE_KEY = "xiaou-site-content-v2";
-
-    function clone(o) { return JSON.parse(JSON.stringify(o)); }
-
-    function deepMerge(base, over) {
-      const out = Array.isArray(base) ? base.slice() : Object.assign({}, base);
-      for (const k in over) {
-        const v = over[k];
-        if (v && typeof v === "object" && !Array.isArray(v) &&
-            base[k] && typeof base[k] === "object" && !Array.isArray(base[k])) {
-          out[k] = deepMerge(base[k], v);
-        } else {
-          out[k] = v;
-        }
-      }
-      return out;
-    }
-
-    function getByPath(obj, path) {
-      return path.split(".").reduce((o, k) => (o == null ? o : o[k]), obj);
-    }
-    function setByPath(obj, path, value) {
-      const keys = path.split(".");
-      let cur = obj;
-      for (let i = 0; i < keys.length - 1; i++) cur = cur[keys[i]];
-      cur[keys[keys.length - 1]] = value;
-    }
-
     function esc(s) {
       return String(s == null ? "" : s)
         .replace(/&/g, "&amp;")
@@ -317,20 +219,6 @@
     // **加粗** + 换行
     function rich(s) {
       return bold(s).replace(/\n/g, "<br />");
-    }
-
-    // ============================================================
-    // 加载 / 保存
-    // ============================================================
-    function loadContent() {
-      let saved = {};
-      try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch (e) {}
-      return deepMerge(clone(DEFAULTS), saved);
-    }
-    let CONTENT = loadContent();
-
-    function saveContent() {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(CONTENT)); } catch (e) {}
     }
 
     // ============================================================
@@ -394,7 +282,7 @@
           <div class="layout">
             <main class="feed" id="writing">
               <div class="feed-head"><h2>最近在写</h2><span class="feed-more">共 ${c.articles.length} 篇</span></div>
-              ${entries || '<div class="feed-empty">还没有文章，点右下角「✎ 编辑」添加吧。</div>'}
+              ${entries || '<div class="feed-empty">还没有文章，敬请期待。</div>'}
             </main>
 
             <aside class="sidebar">
@@ -457,219 +345,8 @@
     }
 
     // ============================================================
-    // 编辑器
-    // ============================================================
-    function f(key, label, type) { return { key, label, type: type || "text" }; }
-
-    function buildEditorSchema() {
-      const g = (group, fields) => ({ group, fields });
-      return [
-        g("基本信息", [
-          f("name", "姓名 / 网站名"),
-          f("tagline", "副标题（名字旁边的短句）"),
-          f("about", "关于我（**文字**可加粗，换行分段）", "textarea"),
-          f("github", "GitHub 主页地址"),
-          f("footer", "页脚版权文字")
-        ]),
-        g("数据卡片", DEFAULTS.stats.flatMap((s, i) => [
-          f(`stats.${i}.num`, `卡片 ${i + 1} · 数字`),
-          f(`stats.${i}.title`, `卡片 ${i + 1} · 标题`),
-          f(`stats.${i}.sub`, `卡片 ${i + 1} · 副标题`)
-        ])),
-        g("文章", DEFAULTS.articles.flatMap((a, i) => [
-          f(`articles.${i}.title`, `文章 ${i + 1} · 标题`),
-          f(`articles.${i}.date`, `文章 ${i + 1} · 日期`),
-          f(`articles.${i}.category`, `文章 ${i + 1} · 分类`),
-          f(`articles.${i}.excerpt`, `文章 ${i + 1} · 摘要`, "textarea"),
-          f(`articles.${i}.href`, `文章 ${i + 1} · 链接`)
-        ])),
-        g("项目", DEFAULTS.projects.flatMap((p, i) => [
-          f(`projects.${i}.name`, `项目 ${i + 1} · 名称`),
-          f(`projects.${i}.desc`, `项目 ${i + 1} · 简介`),
-          f(`projects.${i}.href`, `项目 ${i + 1} · 链接`)
-        ])),
-        g("外站链接", DEFAULTS.links.flatMap((l, i) => [
-          f(`links.${i}.text`, `链接 ${i + 1} · 文字`),
-          f(`links.${i}.href`, `链接 ${i + 1} · 网址`)
-        ]))
-      ];
-    }
-
-    const EDITOR_SCHEMA = buildEditorSchema();
-
-    function buildEditorForm() {
-      const body = document.getElementById("editor-body");
-      const avatarBlock = `
-        <div class="editor-group">
-          <h4>头像</h4>
-          <div class="avatar-uploader">
-            <div class="avatar-preview" id="avatar-preview">${CONTENT.avatar ? `<img src="${esc(CONTENT.avatar)}" alt="" />` : "无头像"}</div>
-            <div class="avatar-actions">
-              <button type="button" id="avatar-upload-btn">上传头像</button>
-              <button type="button" id="avatar-remove-btn" class="danger">删除头像</button>
-            </div>
-          </div>
-          <input type="file" id="avatar-file" accept="image/*" hidden />
-        </div>`;
-      body.innerHTML = avatarBlock + EDITOR_SCHEMA.map((group) => {
-        const fields = group.fields.map((field) => {
-          const value = getByPath(CONTENT, field.key);
-          if (field.type === "textarea") {
-            return `<div class="editor-field"><label>${esc(field.label)}</label><textarea data-key="${esc(field.key)}">${esc(value)}</textarea></div>`;
-          }
-          return `<div class="editor-field"><label>${esc(field.label)}</label><input data-key="${esc(field.key)}" value="${esc(value)}" /></div>`;
-        }).join("");
-        return `<div class="editor-group"><h4>${esc(group.group)}</h4>${fields}</div>`;
-      }).join("");
-      setupAvatar();
-    }
-
-    function updateAvatarPreview(preview) {
-      preview.innerHTML = CONTENT.avatar ? `<img src="${esc(CONTENT.avatar)}" alt="" />` : "无头像";
-    }
-
-    function resizeImage(file, maxSize, callback) {
-      const url = URL.createObjectURL(file);
-      const img = new Image();
-      img.onload = () => {
-        URL.revokeObjectURL(url);
-        const scale = Math.min(1, maxSize / Math.max(img.width, img.height));
-        const w = Math.max(1, Math.round(img.width * scale));
-        const h = Math.max(1, Math.round(img.height * scale));
-        const canvas = document.createElement("canvas");
-        canvas.width = w; canvas.height = h;
-        const ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0, w, h);
-        let hasAlpha = false;
-        try {
-          const data = ctx.getImageData(0, 0, w, h).data;
-          for (let i = 3; i < data.length; i += 4) {
-            if (data[i] < 255) { hasAlpha = true; break; }
-          }
-        } catch (e) {}
-        const out = hasAlpha ? canvas.toDataURL("image/png") : canvas.toDataURL("image/jpeg", 0.85);
-        callback(out);
-      };
-      img.onerror = () => { URL.revokeObjectURL(url); callback(null); };
-      img.src = url;
-    }
-
-    function setupAvatar() {
-      const fileInput = document.getElementById("avatar-file");
-      const uploadBtn = document.getElementById("avatar-upload-btn");
-      const removeBtn = document.getElementById("avatar-remove-btn");
-      const preview = document.getElementById("avatar-preview");
-      if (!fileInput || !uploadBtn || !removeBtn || !preview) return;
-
-      uploadBtn.onclick = () => fileInput.click();
-      removeBtn.onclick = () => {
-        CONTENT.avatar = "";
-        updateAvatarPreview(preview);
-        toast("已删除头像（记得点「保存」）");
-      };
-      fileInput.onchange = () => {
-        const file = fileInput.files && fileInput.files[0];
-        if (!file) return;
-        resizeImage(file, 256, (dataUrl) => {
-          if (!dataUrl) { toast("图片读取失败"); return; }
-          CONTENT.avatar = dataUrl;
-          updateAvatarPreview(preview);
-          toast("头像已选好（记得点「保存」）");
-        });
-        fileInput.value = "";
-      };
-    }
-
-    function collectForm() {
-      document.querySelectorAll("#editor-body [data-key]").forEach((el) => {
-        setByPath(CONTENT, el.getAttribute("data-key"), el.value);
-      });
-    }
-
-    function openEditor() {
-      buildEditorForm();
-      document.getElementById("editor").classList.add("open");
-      document.getElementById("editor").setAttribute("aria-hidden", "false");
-    }
-    function closeEditor() {
-      document.getElementById("editor").classList.remove("open");
-      document.getElementById("editor").setAttribute("aria-hidden", "true");
-    }
-
-    function toast(msg) {
-      const t = document.getElementById("toast");
-      t.textContent = msg;
-      t.classList.add("show");
-      clearTimeout(toast._timer);
-      toast._timer = setTimeout(() => t.classList.remove("show"), 2200);
-    }
-
-    async function exportHtml() {
-      collectForm();
-      saveContent();
-      render();
-
-      const html = document.documentElement.outerHTML;
-      const injection = JSON.stringify(CONTENT).replace(/<\//g, "<\\/");
-      const out = html.replace(
-        /\/\*__CONTENT_START__\*\/([\s\S]*?)\/\*__CONTENT_END__\*\//,
-        () => "/*__CONTENT_START__*/" + injection + "/*__CONTENT_END__*/"
-      );
-
-      if (window.showSaveFilePicker) {
-        try {
-          const handle = await window.showSaveFilePicker({
-            suggestedName: "index.html",
-            types: [{ description: "网页文件", accept: { "text/html": [".html", ".htm"] } }]
-          });
-          const writable = await handle.createWritable();
-          await writable.write(out);
-          await writable.close();
-          toast("已保存到文件 ✓");
-          return;
-        } catch (e) {
-          if (e && e.name === "AbortError") return;
-        }
-      }
-
-      const blob = new Blob([out], { type: "text/html;charset=utf-8" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "index.html";
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(a.href);
-      toast("已下载 index.html");
-    }
-
-    // ============================================================
     // 启动
     // ============================================================
-    document.getElementById("edit-toggle").addEventListener("click", openEditor);
-    document.getElementById("editor-close").addEventListener("click", closeEditor);
-
-    document.getElementById("btn-save").addEventListener("click", () => {
-      collectForm();
-      saveContent();
-      render();
-      toast("已保存，网页已更新");
-    });
-
-    document.getElementById("btn-export").addEventListener("click", exportHtml);
-
-    document.getElementById("btn-reset").addEventListener("click", () => {
-      localStorage.removeItem(STORAGE_KEY);
-      CONTENT = clone(DEFAULTS);
-      render();
-      buildEditorForm();
-      toast("已恢复默认内容");
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeEditor();
-    });
-
     render();
   </script>
 </body>
