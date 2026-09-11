@@ -1,0 +1,550 @@
+{
+  "source": "https://dayuai.online/",
+  "fetchedAt": "2026-09-10T16:01:23.061Z",
+  "totalFiles": 90,
+  "totalBytes": 11606791,
+  "files": [
+    {
+      "path": "_next/static/chunks/Arrow-CLC9QUj1.js",
+      "bytes": 542,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/Arrow-CLC9QUj1.js"
+    },
+    {
+      "path": "_next/static/chunks/ContactDialog-B4QSOlMw.js",
+      "bytes": 3491,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/ContactDialog-B4QSOlMw.js"
+    },
+    {
+      "path": "_next/static/chunks/dayu-scene-BTE3YKpP.js",
+      "bytes": 20793,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/dayu-scene-BTE3YKpP.js"
+    },
+    {
+      "path": "_next/static/chunks/DirectorContent-CjYImQjp.js",
+      "bytes": 16140,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/DirectorContent-CjYImQjp.js"
+    },
+    {
+      "path": "_next/static/chunks/DirectorPanel-DQEc_n_O.js",
+      "bytes": 4235,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/DirectorPanel-DQEc_n_O.js"
+    },
+    {
+      "path": "_next/static/chunks/Experience-Cump_DLN.js",
+      "bytes": 7675,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/Experience-Cump_DLN.js"
+    },
+    {
+      "path": "_next/static/chunks/focus-image-C27tAGAS.js",
+      "bytes": 6885,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/focus-image-C27tAGAS.js"
+    },
+    {
+      "path": "_next/static/chunks/FocusImage-DLU2fXd6.js",
+      "bytes": 1868,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/FocusImage-DLU2fXd6.js"
+    },
+    {
+      "path": "_next/static/chunks/footer-fluid-4hto47B4.js",
+      "bytes": 4805,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/footer-fluid-4hto47B4.js"
+    },
+    {
+      "path": "_next/static/chunks/FooterFluid-DlFOoIgH.js",
+      "bytes": 1116,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/FooterFluid-DlFOoIgH.js"
+    },
+    {
+      "path": "_next/static/chunks/framework-BgSIrAUN.js",
+      "bytes": 190152,
+      "contentType": "text/javascript; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/chunks/framework-BgSIrAUN.js"
+    },
+    {
+      "path": "_next/static/chunks/GlowField-lQbZiTJb.js",
+      "bytes": 7230,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/GlowField-lQbZiTJb.js"
+    },
+    {
+      "path": "_next/static/chunks/Header-BsuSI9gb.js",
+      "bytes": 18278,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/Header-BsuSI9gb.js"
+    },
+    {
+      "path": "_next/static/chunks/index-DfmElV1X.js",
+      "bytes": 178960,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/index-DfmElV1X.js"
+    },
+    {
+      "path": "_next/static/chunks/layout-segment-context-2PY-o4vF.js",
+      "bytes": 489,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/layout-segment-context-2PY-o4vF.js"
+    },
+    {
+      "path": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "bytes": 694,
+      "contentType": "text/javascript; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/chunks/rolldown-runtime-C60lm6uB.js"
+    },
+    {
+      "path": "_next/static/chunks/ServiceCards-W1TIj1sp.js",
+      "bytes": 4412,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/ServiceCards-W1TIj1sp.js"
+    },
+    {
+      "path": "_next/static/chunks/three.module-BrccC3o8.js",
+      "bytes": 519195,
+      "contentType": "application/javascript",
+      "url": "https://dayuai.online/_next/static/chunks/three.module-BrccC3o8.js"
+    },
+    {
+      "path": "_next/static/css/DirectorPanel.BAxzdeg9.css",
+      "bytes": 2160,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/DirectorPanel.BAxzdeg9.css"
+    },
+    {
+      "path": "_next/static/css/Experience.B0d6g30x.css",
+      "bytes": 4484,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/Experience.B0d6g30x.css"
+    },
+    {
+      "path": "_next/static/css/FocusImage.CW7tFmgw.css",
+      "bytes": 2101,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/FocusImage.CW7tFmgw.css"
+    },
+    {
+      "path": "_next/static/css/FooterFluid.uC-4y6mD.css",
+      "bytes": 1070,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/FooterFluid.uC-4y6mD.css"
+    },
+    {
+      "path": "_next/static/css/GlowField.ai5wH5bc.css",
+      "bytes": 1741,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/GlowField.ai5wH5bc.css"
+    },
+    {
+      "path": "_next/static/css/Header.DIyPkqiD.css",
+      "bytes": 5677,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/Header.DIyPkqiD.css"
+    },
+    {
+      "path": "_next/static/css/index.Dhr-sIyN.css",
+      "bytes": 26195,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/index.Dhr-sIyN.css"
+    },
+    {
+      "path": "_next/static/css/page.DR9NCJIX.css",
+      "bytes": 20467,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/page.DR9NCJIX.css"
+    },
+    {
+      "path": "_next/static/css/ServiceCards.Cu_bARYn.css",
+      "bytes": 4558,
+      "contentType": "text/css; charset=utf-8",
+      "url": "https://dayuai.online/_next/static/css/ServiceCards.Cu_bARYn.css"
+    },
+    {
+      "path": "assets/dayu-atmosphere.mp3",
+      "bytes": 1345448,
+      "contentType": "audio/mpeg",
+      "url": "https://dayuai.online/assets/dayu-atmosphere.mp3"
+    },
+    {
+      "path": "assets/dayu-contact.png",
+      "bytes": 3062930,
+      "contentType": "image/png",
+      "url": "https://dayuai.online/assets/dayu-contact.png"
+    },
+    {
+      "path": "assets/dayu-portrait-small.webp",
+      "bytes": 57066,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/dayu-portrait-small.webp"
+    },
+    {
+      "path": "assets/dayu-portrait.webp",
+      "bytes": 409848,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/dayu-portrait.webp"
+    },
+    {
+      "path": "assets/dayu-recognition-theme.mp3",
+      "bytes": 890318,
+      "contentType": "audio/mpeg",
+      "url": "https://dayuai.online/assets/dayu-recognition-theme.mp3"
+    },
+    {
+      "path": "assets/director/animation-ip-small.webp",
+      "bytes": 54770,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/animation-ip-small.webp"
+    },
+    {
+      "path": "assets/director/animation-ip.webp",
+      "bytes": 166728,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/animation-ip.webp"
+    },
+    {
+      "path": "assets/director/behind-the-scenes-small.webp",
+      "bytes": 26694,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/behind-the-scenes-small.webp"
+    },
+    {
+      "path": "assets/director/behind-the-scenes.webp",
+      "bytes": 31640,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/behind-the-scenes.webp"
+    },
+    {
+      "path": "assets/director/ccb-small.webp",
+      "bytes": 27240,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/ccb-small.webp"
+    },
+    {
+      "path": "assets/director/ccb.webp",
+      "bytes": 82402,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/ccb.webp"
+    },
+    {
+      "path": "assets/director/chali-small.webp",
+      "bytes": 26344,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/chali-small.webp"
+    },
+    {
+      "path": "assets/director/chali.webp",
+      "bytes": 56562,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/chali.webp"
+    },
+    {
+      "path": "assets/director/company-film-small.webp",
+      "bytes": 33988,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/company-film-small.webp"
+    },
+    {
+      "path": "assets/director/company-film.webp",
+      "bytes": 115274,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/company-film.webp"
+    },
+    {
+      "path": "assets/director/drink-commercial-small.webp",
+      "bytes": 19382,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/drink-commercial-small.webp"
+    },
+    {
+      "path": "assets/director/drink-commercial.webp",
+      "bytes": 50470,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/drink-commercial.webp"
+    },
+    {
+      "path": "assets/director/hardcore-science-small.webp",
+      "bytes": 29116,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/hardcore-science-small.webp"
+    },
+    {
+      "path": "assets/director/hardcore-science.webp",
+      "bytes": 95554,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/hardcore-science.webp"
+    },
+    {
+      "path": "assets/director/honor-of-kings-small.webp",
+      "bytes": 30056,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/honor-of-kings-small.webp"
+    },
+    {
+      "path": "assets/director/honor-of-kings.webp",
+      "bytes": 78210,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/honor-of-kings.webp"
+    },
+    {
+      "path": "assets/director/interviews-small.webp",
+      "bytes": 19992,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/interviews-small.webp"
+    },
+    {
+      "path": "assets/director/interviews.webp",
+      "bytes": 56152,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/interviews.webp"
+    },
+    {
+      "path": "assets/director/jay-chou-cards-small.webp",
+      "bytes": 24192,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/jay-chou-cards-small.webp"
+    },
+    {
+      "path": "assets/director/jay-chou-cards.webp",
+      "bytes": 27754,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/jay-chou-cards.webp"
+    },
+    {
+      "path": "assets/director/knowledge-small.webp",
+      "bytes": 34140,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/knowledge-small.webp"
+    },
+    {
+      "path": "assets/director/knowledge.webp",
+      "bytes": 101386,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/knowledge.webp"
+    },
+    {
+      "path": "assets/director/lingang-small.webp",
+      "bytes": 38118,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/lingang-small.webp"
+    },
+    {
+      "path": "assets/director/lingang.webp",
+      "bytes": 105952,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/lingang.webp"
+    },
+    {
+      "path": "assets/director/meet-summer-small.webp",
+      "bytes": 21378,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/meet-summer-small.webp"
+    },
+    {
+      "path": "assets/director/meet-summer.webp",
+      "bytes": 62824,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/meet-summer.webp"
+    },
+    {
+      "path": "assets/director/on-location-small.webp",
+      "bytes": 34912,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/on-location-small.webp"
+    },
+    {
+      "path": "assets/director/on-location.webp",
+      "bytes": 90674,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/on-location.webp"
+    },
+    {
+      "path": "assets/director/on-set-small.webp",
+      "bytes": 39606,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/on-set-small.webp"
+    },
+    {
+      "path": "assets/director/on-set.webp",
+      "bytes": 93434,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/on-set.webp"
+    },
+    {
+      "path": "assets/director/schwarzkopf-01-small.webp",
+      "bytes": 15996,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/schwarzkopf-01-small.webp"
+    },
+    {
+      "path": "assets/director/schwarzkopf-01.webp",
+      "bytes": 46090,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/schwarzkopf-01.webp"
+    },
+    {
+      "path": "assets/director/schwarzkopf-02-small.webp",
+      "bytes": 42768,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/schwarzkopf-02-small.webp"
+    },
+    {
+      "path": "assets/director/schwarzkopf-02.webp",
+      "bytes": 135956,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/schwarzkopf-02.webp"
+    },
+    {
+      "path": "assets/director/science-entertainment-small.webp",
+      "bytes": 75522,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/science-entertainment-small.webp"
+    },
+    {
+      "path": "assets/director/science-entertainment.webp",
+      "bytes": 236656,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/science-entertainment.webp"
+    },
+    {
+      "path": "assets/director/social-experiment-small.webp",
+      "bytes": 45710,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/social-experiment-small.webp"
+    },
+    {
+      "path": "assets/director/social-experiment.webp",
+      "bytes": 132948,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/social-experiment.webp"
+    },
+    {
+      "path": "assets/director/stories-through-window-small.webp",
+      "bytes": 22418,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/stories-through-window-small.webp"
+    },
+    {
+      "path": "assets/director/stories-through-window.webp",
+      "bytes": 69468,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/stories-through-window.webp"
+    },
+    {
+      "path": "assets/director/wallace-live-small.webp",
+      "bytes": 117276,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/wallace-live-small.webp"
+    },
+    {
+      "path": "assets/director/wallace-live.webp",
+      "bytes": 523150,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/wallace-live.webp"
+    },
+    {
+      "path": "assets/director/zhiqi-small.webp",
+      "bytes": 81450,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/zhiqi-small.webp"
+    },
+    {
+      "path": "assets/director/zhiqi.webp",
+      "bytes": 196372,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/director/zhiqi.webp"
+    },
+    {
+      "path": "assets/fonts/manrope-extrabold.ttf",
+      "bytes": 95688,
+      "contentType": "font/ttf",
+      "url": "https://dayuai.online/assets/fonts/manrope-extrabold.ttf"
+    },
+    {
+      "path": "assets/fonts/manrope-regular.ttf",
+      "bytes": 94972,
+      "contentType": "font/ttf",
+      "url": "https://dayuai.online/assets/fonts/manrope-regular.ttf"
+    },
+    {
+      "path": "assets/work-champion-small.webp",
+      "bytes": 47238,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-champion-small.webp"
+    },
+    {
+      "path": "assets/work-champion.webp",
+      "bytes": 150552,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-champion.webp"
+    },
+    {
+      "path": "assets/work-dog-small.webp",
+      "bytes": 71830,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-dog-small.webp"
+    },
+    {
+      "path": "assets/work-dog.webp",
+      "bytes": 191710,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-dog.webp"
+    },
+    {
+      "path": "assets/work-film-small.webp",
+      "bytes": 32420,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-film-small.webp"
+    },
+    {
+      "path": "assets/work-film.webp",
+      "bytes": 99876,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-film.webp"
+    },
+    {
+      "path": "assets/work-gala-small.webp",
+      "bytes": 51972,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-gala-small.webp"
+    },
+    {
+      "path": "assets/work-gala.webp",
+      "bytes": 183104,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-gala.webp"
+    },
+    {
+      "path": "assets/work-waves-small.webp",
+      "bytes": 58856,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-waves-small.webp"
+    },
+    {
+      "path": "assets/work-waves.webp",
+      "bytes": 140718,
+      "contentType": "image/webp",
+      "url": "https://dayuai.online/assets/work-waves.webp"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 264,
+      "contentType": "image/svg+xml",
+      "url": "https://dayuai.online/favicon.svg"
+    },
+    {
+      "path": "reference.html",
+      "bytes": 149844,
+      "contentType": "text/html; charset=utf-8",
+      "url": "https://dayuai.online/"
+    }
+  ],
+  "failures": [],
+  "ignoredExternal": []
+}

@@ -1,0 +1,93 @@
+{
+  "collectedOn": "2026-09-11",
+  "description": "素材来自用户指定照片与 xiaoou-waou 的 GitHub 个人资料及本人仓库；本次网站制作未生成图片、未使用参考站作者的作品。",
+  "assets": [
+    {
+      "file": "portrait.jpeg",
+      "project": "xiaoou-waou",
+      "sourceFile": "/Users/a0000/Downloads/Gemini_Generated_Image_ic5q49ic5q49ic5q.jpeg",
+      "kind": "user-provided-portrait",
+      "savedMime": "image/jpeg",
+      "width": 896,
+      "height": 1195,
+      "bytes": 472393,
+      "note": "用户明确指定的照片，原样复制到复刻版。用于个人介绍与联系卡；不修改下载目录源文件，保留彩色与既有模糊对焦效果。"
+    },
+    {
+      "file": "avatar.png",
+      "project": "xiaoou-waou",
+      "sourceUrl": "https://avatars.githubusercontent.com/u/313057652?v=4&s=400",
+      "sourcePage": "https://github.com/xiaoou-waou",
+      "kind": "github-profile-avatar",
+      "sourceMime": "image/jpeg",
+      "savedMime": "image/png",
+      "width": 400,
+      "height": 400,
+      "note": "来自真实 GitHub 资料头像。源响应为 JPEG，已用 sips 无构图改动转换为真正的 PNG。"
+    },
+    {
+      "file": "xhs-sanhuamao-writer.png",
+      "project": "xhs-sanhuamao-writer",
+      "sourceUrl": "https://opengraph.githubassets.com/1/xiaoou-waou/xhs-sanhuamao-writer",
+      "sourcePage": "https://github.com/xiaoou-waou/xhs-sanhuamao-writer",
+      "kind": "github-og",
+      "savedMime": "image/png",
+      "width": 1200,
+      "height": 600,
+      "note": "GitHub 官方仓库卡片。仓库 API 确认存在，但 README API 返回 404。"
+    },
+    {
+      "file": "xiaoou-cinematic-video-prompt.png",
+      "project": "xiaoou-cinematic-video-prompt",
+      "sourceUrl": "https://opengraph.githubassets.com/1/xiaoou-waou/xiaoou-cinematic-video-prompt",
+      "sourcePage": "https://github.com/xiaoou-waou/xiaoou-cinematic-video-prompt",
+      "kind": "github-og",
+      "savedMime": "image/png",
+      "width": 1200,
+      "height": 600,
+      "note": "GitHub 官方仓库卡片。已检查 README，未发现作品示例图片。"
+    },
+    {
+      "file": "zhaopianfengge-skill.png",
+      "project": "zhaopianfengge-skill",
+      "sourceUrl": "https://opengraph.githubassets.com/6a705e7d6f02977ef2f6766684ce54df647f03e18400c373559e0215b44ba14b/xiaoou-waou/zhaopianfengge-skill",
+      "sourcePage": "https://github.com/xiaoou-waou/zhaopianfengge-skill",
+      "kind": "github-og",
+      "savedMime": "image/png",
+      "width": 1200,
+      "height": 600,
+      "bytes": 95189,
+      "note": "使用页面已观测到的精确官方 OG hash 成功获取。此图为真实仓库信息卡片，不是生成的作品示例。"
+    }
+  ],
+  "unavailable": [
+    {
+      "project": "xiaoou-material-illustrator",
+      "sourceUrl": "https://opengraph.githubassets.com/1/xiaoou-waou/xiaoou-material-illustrator",
+      "kind": "github-og",
+      "reason": "官方 OG 返回 HTTP 429 限流，未保存。README 和仓库文件树均未发现作品示例图。"
+    },
+    {
+      "project": "Snaploom",
+      "sourceUrl": "https://raw.githubusercontent.com/xiaoou-waou/Snaploom/main/assets/preview.png",
+      "sourcePage": "https://github.com/xiaoou-waou/Snaploom",
+      "kind": "readme-example",
+      "apiSourceUrl": "https://api.github.com/repos/xiaoou-waou/Snaploom/contents/assets/preview.png",
+      "blobSourceUrl": "https://api.github.com/repos/xiaoou-waou/Snaploom/git/blobs/387408cc9dda333eb1e919393bd26d4b26a66e85",
+      "verifiedBytes": 1863155,
+      "verifiedSha": "387408cc9dda333eb1e919393bd26d4b26a66e85",
+      "reason": "README 明确引用 assets/preview.png，原始端点曾在 18 秒内未完成。素材救援时 contents API 返回 HTTP 200 并确认文件、大小及 SHA；由于超过 1MB 未直接返回 content，改用官方 git blob API，但单次 35 秒请求超时。未保存不完整文件，未循环重试。"
+    },
+    {
+      "project": "image-recon",
+      "sourcePage": "https://github.com/xiaoou-waou/image-recon",
+      "kind": "not-downloaded",
+      "reason": "已检查 README，未发现作品示例图；达到本次限时素材采集范围后未继续下载官方 OG。"
+    }
+  ],
+  "networkNotes": [
+    "Wigolo 未连接，按主任务许可使用 Node fetch 只读访问官方 GitHub 页面、API 和图片 CDN。",
+    "github.com 页面直连超时；GitHub API 可访问，已确认六个目标仓库均存在。",
+    "没有重复循环重试，不把 HTTP 错误页保存为图片。"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "xiaoou-personal-website-2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "个人网站二：dayuai.online 同款视觉，小欧的真实内容。原存档不改动。",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "node tools/serve.mjs",
+    "dev": "node tools/serve.mjs",
+    "check": "node tools/check.mjs"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.12"
+  }
+}

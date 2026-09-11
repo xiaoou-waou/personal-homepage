@@ -1,0 +1,24 @@
+{
+  "description": "创建个人网站二复刻前的原站只读 SHA256 基线。路径相对于父项目目录，仅用于验证原存档未被改动。",
+  "capturedOn": "2026-09-10",
+  "algorithm": "sha256",
+  "originalGitStatus": "?? 个人网站/",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "3ecdf0c1e4dea3743ea9f8b16af7a2da44a60ee290409aa037255e3e9312f629"
+    },
+    {
+      "path": "个人网站/index.html",
+      "sha256": "141c95a8258e24ef860d93e5963026592cccbcd65cb7ceb29938706f81813e1b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0e3fbc8b6494333ddacea4dbc8170ae1f74f80a148f768190300a1bd73e99426"
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

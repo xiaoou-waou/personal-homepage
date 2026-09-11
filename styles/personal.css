@@ -1,0 +1,50 @@
+/* finesse · register=brand · A=reference-ink+sage · B=Manrope+PingFang · C=reference-scroll-chapters
+ * D=original-WebGL-shader · E=reference-light+fluid · SOUL=8 SPECTACLE=8 DENSITY=5
+ * User explicitly requested the same design; reference fidelity overrides style rotation. */
+html, body { overflow-x: clip; }
+h1, h2, h3, h4, .repo-name { overflow-wrap: anywhere; min-width: 0; }
+.profile-copy, .film-item, .repo, .title-column, .awards-column { min-width: 0; }
+.profile-portrait .focus-image__source { object-position: 50% 50%; }
+/* Keep the portrait in color; the independent WebGL autofocus stays intact. */
+.portfolio .profile-photo,
+.portfolio .profile-photo:hover,
+.portfolio .profile-photo:focus-within,
+.portfolio .profile-photo:has(.focus-image[data-touch-visible="true"]) {
+  filter: none;
+  transition: none;
+}
+.project-og .focus-image__source { object-fit: contain; background: #f5f5f5; }
+.contact-profile { display: flex; align-items: center; gap: 20px; margin: 25px 0 16px; padding: 25px; border: 1px solid var(--line); }
+.contact-profile img { width: 96px; height: 96px; object-fit: cover; }
+.contact-profile > span { flex: 1; min-width: 0; }
+.contact-profile strong, .contact-profile small { display: block; }
+.contact-profile strong { font-size: 17px; letter-spacing: -.025em; }
+.contact-profile small { margin-top: 8px; color: var(--muted); font-size: 12px; }
+.contact-profile > svg { flex-shrink: 0; }
+.article-row { transition: color .25s, background .25s; }
+.article-row:hover h4 { color: var(--accent); }
+.article-row .honor-year small { display: block; margin-top: 6px; font-size: 9px; opacity: .7; }
+.article-row .article-category { margin: 9px 0 10px; }
+.article-row .article-excerpt { font-size: 12px; line-height: 1.85; opacity: .76; }
+.writing-section .service-card__front h3 { margin: 36px 0 20px; font-size: clamp(20px, 1.6vw, 25px); line-height: 1.45; }
+.writing-title-link { color: inherit; }
+.writing-title-link:hover { text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px; }
+.writing-card-excerpt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+.writing-section .service-card__front ul { margin: 22px 0 28px; }
+.writing-all { display: inline-flex; align-items: center; gap: 28px; margin-top: 34px; }
+.brief-status { min-height: 42px; }
+@media (max-width: 700px) {
+  .profile-copy #about-title { font-size: clamp(31px, 7.7vw, 52px); }
+  .contact-profile { padding: 16px; gap: 12px; }
+  .contact-profile img { width: 64px; height: 64px; }
+  .contact-profile strong { font-size: 14px; }
+  .article-row .article-excerpt { font-size: 11px; }
+  .writing-section .service-card__front h3 { max-width: none; font-size: 24px; }
+  .repo-bottom { flex-wrap: wrap; gap: 8px; }
+  .world-entry-wordmark, .wordmark { letter-spacing: -1.7px; }
+  .portfolio .site-signature > a:first-child { font-size: clamp(60px, 21vw, 112px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+}
